@@ -1,0 +1,158 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    <h1>Income: {{ Constants.endowment1 }} €</h1>
+    <br>
+    <br>
+{% endblock %}
+
+
+{% block content %}
+    <h2>T-Shirts</h2>
+    <br>
+
+    <p>This is the third round out of 3. In this round you are given the above mentioned total income.
+    You know have to choose which goods you want to purchase. You will be able to purchase every item.
+    Remember, your payoff is defined as the amount: </p>
+    <p>income-total expenditures</p>
+    <p> First you have to choose, which T-Shirt you would prefer to buy from your given income.
+    The three products are completely identical regarding their material, appearance and quality.You can only buy one ot those products and you must choose one.</p>
+    <p>Please select the goods you want to purchase given your income.</p>
+    <br>
+    <p><font color="#B404AE"><b>Firm A:</b></font></p>
+    <p><b>place of manufacture:</b> Asia</p>
+    <p><b>brand:</b> is known for its inexpensive products</p>
+    <p><b>environmental impact:</b> no positive contribution to environmental problems, even negative effect on the environment</p>
+    <p><b>Price:</b> 10 €</p>
+    <br>
+    <p><font color="#B404AE"><b>Firm B:</b></font></p>
+    <p><b>place of manufacture:</b> Europe</p>
+    <p><b>brand:</b> well known brand, with a good reputation</p>
+    <p><b>environmental impact:</b> no positive contribution to environmental problems</p>
+    <p><b>Price:</b> 15 €</p>
+    <br>
+    <p><font color="#B404AE"><b>Firm C:</b></font></p>
+    <p><b>place of manufacture:</b> Europe</p>
+    <p><b>brand:</b> environmental friendly brand</p>
+    <p><b>environmental impact:</b> GOTS and Fairtrade certified product, use of organic materials only</p>
+    <p><b>Price:</b> 18 €</p>
+
+    {% formfield player.choiceTShirt label="Please choose which good you want to purchase:" %}
+
+<br>
+<br>
+<br>
+    <h2>Coffee</h2>
+    <br>
+    <p> Now you have to choose, which coffee you would prefer to buy from your given income.
+    The three products are completely identical regarding their material, appearance and quality.You can only buy one ot those products and you must choose one.</p>
+    <p>Please select the goods you want to purchase given your income.</p>
+    <br>
+    <p><font color="#B404AE"><b>Coffee A:</b></font></p>
+    <p><b>place of manufacture:</b> Afica</p>
+    <p><b>brand:</b> discounter brand</p>
+    <p><b>environmental impact:</b> no positive contribution to environmental problems, even negative effect on the environment</p>
+    <p><b>Price:</b> 5 €</p>
+    <br>
+    <p><font color="#B404AE"><b>Coffee B:</b></font></p>
+    <p><b>place of manufacture:</b> South America</p>
+    <p><b>brand:</b> well known brand, with a good reputation</p>
+    <p><b>environmental impact:</b> no information about a positive contribution to environmental problems</p>
+    <p><b>Price:</b> 10 €</p>
+    <br>
+    <p><font color="#B404AE"><b>Coffee C:</b></font></p>
+    <p><b>place of manufacture:</b> South America</p>
+    <p><b>brand:</b> environmental friendly brand</p>
+    <p><b>environmental impact:</b>Fairtrade certified product, coffee from organic farming</p>
+    <p><b>Price:</b> 15 €</p>
+
+    {% formfield player.choiceCoffee label="Please choose which good you want to purchase:" %}
+<br>
+<br>
+<br>
+    <h2>Mobile phone</h2>
+    <br>
+    <p> Now you have to choose, which mobile phone you would prefer to buy from your given income.
+    The three products are completely identical regarding their material, appearance and quality.You can only buy one ot those products and you must choose one.</p>
+    <p>Please select the goods you want to purchase given your income.</p>
+    <br>
+    <p><font color="#B404AE"><b>Mobile phone A:</b></font></p>
+    <p><b>place of manufacture:</b> Asia</p>
+    <p><b>brand:</b> is known for its inexpensive products</p>
+    <p><b>environmental impact:</b> no positive contribution to environmental problems, even negative effect on the environment</p>
+    <p><b>Price:</b> 400 €</p>
+    <br>
+    <p><font color="#B404AE"><b>Mobile Phone B:</b></font></p>
+    <p><b>place of manufacture:</b> Asia</p>
+    <p><b>brand:</b> well known brand, with a good reputation</p>
+    <p><b>environmental impact:</b> no information about a positive contribution to environmental problems</p>
+    <p><b>Price:</b> 700 €</p>
+    <br>
+    <p><font color="#B404AE"><b>Mobile Phone C:</b></font></p>
+    <p><b>place of manufacture:</b> Europe</p>
+    <p><b>brand:</b> environmental friendly brand</p>
+    <p><b>environmental impact:</b> Fairtrade certified product, mainly made out of recycled materials</p>
+    <p><b>Price:</b> 1000 €</p>
+
+    {% formfield player.choiceMobile label="Please choose which good you want to purchase:" %}
+<br>
+<br>
+<br>
+    <h2>Electricity Contract</h2>
+    <br>
+    <p> Now you have to choose, which contract you would prefer to buy from your given income.</p>
+    <p>Please select the goods you want to purchase given your income.</p>
+    <br>
+    <p><font color="#B404AE"><b>Contract A:</b></font></p>
+    <p><b>place of manufacture:</b> Asia</p>
+    <p><b>brand:</b> is known for its inexpensive products</p>
+    <p><b>environmental impact:</b> no positive contribution to environmental problems, even negative effect on the environment</p>
+    <p><b>Price:</b> 20 €</p>
+    <br>
+    <p><font color="#B404AE"><b>Contract B:</b></font></p>
+    <p><b>place of manufacture:</b> Asia</p>
+    <p><b>brand:</b> well known brand, with a good reputation</p>
+    <p><b>environmental impact:</b> no information about a positive contribution to environmental problems</p>
+    <p><b>Price:</b> 40 €</p>
+    <br>
+    <p><font color="#B404AE"><b>Contract C:</b></font></p>
+    <p><b>place of manufacture:</b> Europe</p>
+    <p><b>brand:</b> environmental friendly brand</p>
+    <p><b>environmental impact:</b> Fairtrade certified product, mainly made out of recycled materials</p>
+    <p><b>Price:</b> 60 €</p>
+
+    {% formfield player.choiceContract label="Please choose which good you want to purchase:" %}
+<br>
+<br>
+<br>
+    <h2>Chair</h2>
+    <br>
+    <p> Now you have to choose, which chair you would prefer to buy from your given income.
+    The three products are completely identical regarding their material, appearance and quality.You can only buy one ot those products and you must choose one.</p>
+    <p>Please select the goods you want to purchase given your income.</p>
+    <br>
+    <p><font color="#B404AE"><b>Chair A:</b></font></p>
+    <p><b>place of manufacture:</b> Asia</p>
+    <p><b>brand:</b> is known for its inexpensive products</p>
+    <p><b>environmental impact:</b> no positive contribution to environmental problems, even negative effect on the environment</p>
+    <p><b>Price:</b> 50 €</p>
+    <br>
+    <p><font color="#B404AE"><b>Chair B:</b></font></p>
+    <p><b>place of manufacture:</b> Asia</p>
+    <p><b>brand:</b> well known brand, with a good reputation</p>
+    <p><b>environmental impact:</b> no information about a positive contribution to environmental problems</p>
+    <p><b>Price:</b> 150 €</p>
+    <br>
+    <p><font color="#B404AE"><b>Chair C:</b></font></p>
+    <p><b>place of manufacture:</b> Europe</p>
+    <p><b>brand:</b> environmental friendly brand</p>
+    <p><b>environmental impact:</b> Fairtrade certified product, mainly made out of recycled materials</p>
+    <p><b>Price:</b> 250 €</p>
+
+    {% formfield player.choiceChair label="Please choose which good you want to purchase:" %}
+
+
+{% next_button %}
+
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends "global/Page.html" %}
+{% load otree %}
+
+{% block title %}
+    Instructions
+{% endblock %}
+
+<#div class="card bg-light">
+    <#div class="card-body">
+
+    <#h3>
+        Instructions
+    <#/h3>
+{% block content %}
+        <p> In this experiment you have to solve three different tasks.
+        Each task will be played three times with three different incomes.</p>
+
+        <p><b><font color="#B404AE">First Task:</font></b></p>
+        <p>You are given a fixed income.</p>
+        <p>Guess approximately how much you think you will spend on environmentally-friendly goods.
+        Give a number in percent.</p>
+        <p><b><font color="#B404AE">Second Task:</font></b></p>
+        <p>You are given a fixed income, which covers all the expenses you could possibly create.
+        You have to choose between consumption goods out of five different areas.</p>
+        <p>For each consumption good you are given three choices with different prices.</p>
+        <p>Before each choice the differentiation in the goods will be explained.</p>
+        <p>Every expense you create will be subtracted from the fixed income.</p>
+        <p>You can distribute the income however you like, in the end every choice will be treated equally.</p>
+
+ {% next_button %}
+
+{% endblock %}

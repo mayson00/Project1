@@ -1,0 +1,19 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Self-Evaluation
+{% endblock %}
+
+{% block content %}
+    <p>Please make sure that your estimations add up to 100 %.</p>
+
+   <p>{% formfield player.evaluation1 label="Please estimate how much percent of your income you will spend on cheaper goods." %}</p>
+
+   <p>{% formfield player.evaluation2 label="Please estimate how much percent of your income you will spend on goods of well-known brands." %}</p>
+
+   <p>{% formfield player.evaluation3 label="Please estimate how much percent of your income you will spend on environmentally-friendly goods." %}</p>
+
+{% next_button %}
+
+{% endblock %}
